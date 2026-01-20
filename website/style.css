@@ -234,9 +234,75 @@ li {
             box-shadow: none;
         }
 
+/*RECORDBOOK PAGE*/
 .error {
     margin-top: 15px;
     color: #ff6b6b;
     font-weight: 600;
     display: none;
 }
+
+/*HISTORY PAGE*/
+.records-page {
+    background-attachment: fixed;
+}
+
+.page-subtitle {
+    text-align: center;
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.card.record summary h3 {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.card.record summary h2 {
+    font-size: 1.2rem;
+}
+
+.card.record ul {
+    padding-left: 18px;
+}
+
+.card.record li {
+    margin: 6px 0;
+}
+.history-page {
+    background-attachment: fixed;
+}
+
+.history-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+    .timeline li {
+        display: grid;
+        grid-template-columns: 90px 1fr auto;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+        .timeline li:last-child {
+            border-bottom: none;
+        }
+
+    .timeline .date {
+        opacity: 0.7;
+        font-size: 0.85rem;
+    }
+
+    .timeline .note {
+        opacity: 0.85;
+        font-size: 0.85rem;
+    }
